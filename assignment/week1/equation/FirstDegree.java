@@ -19,9 +19,9 @@ public class FirstDegree {
     public String solve() {
     	String res = null;
         if ( a == 0 && b == 0)
-        	res = "Phuong trinh co vo so nghiem.";
+        	res = "Phuong trinh co vo so nghiem";
         else if ( a == 0 && b != 0 )
-        	res = "Phuong trinh vo nghiem.";
+        	res = "Phuong trinh vo nghiem";
         else
         	res = "Phuong trinh co nghiem duy nhat x = " + Double.toString(-b/a);
     return res;
