@@ -2,20 +2,21 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
+		Arrays array = new Arrays();
 		System.out.print("Please enter the length of your array: ");
 		int n = keyboard.nextInt();
-		Arrays array = new Arrays(n);
+		int[] a = new int[n];
 		for (int i=0; i<n; i++) {
 			System.out.print("array[" + i + "] = ");
-			array.setElement(i, keyboard.nextInt());
+			a[i] = keyboard.nextInt();
 		}
 		System.out.print("Your array: ");
-		array.show();
-		array.sort();
+		array.show(a);
+		array.sort(a);
 		System.out.print("\nSorted array: ");
-		array.show();
-		System.out.print("\nSum : " + array.sum() + "\n");
-		System.out.print("Average : " + array.average());
+		array.show(a);
+		System.out.print("\nSum : " + array.sum(a) + "\n");
+		System.out.print("Average : " + array.average(a));
 	keyboard.close();
 	}
 }

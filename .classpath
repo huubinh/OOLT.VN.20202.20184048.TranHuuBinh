@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="assignment/|example/" kind="src" path="Lab01"/>
+	<classpathentry kind="src" path="Lab01/assignment"/>
+	<classpathentry kind="src" path="Lab01/example"/>
+	<classpathentry kind="src" path="Lab02/assignment/Array/src"/>
+	<classpathentry kind="src" path="Lab02/assignment/DisplayTriangle/src"/>
+	<classpathentry kind="src" path="Lab02/assignment/Matrix/src"/>
+	<classpathentry kind="src" path="Lab02/assignment/NumOfDays/src"/>
+	<classpathentry kind="output" path="Lab02/assignment/Array/bin"/>
+</classpath>
