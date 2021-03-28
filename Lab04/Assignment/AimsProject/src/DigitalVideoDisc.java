@@ -61,4 +61,8 @@ public class DigitalVideoDisc {
 	public void setCost(float cost) {
 		this.cost = cost;
 	}
+	public String toStringDVD() {
+		return String.join("","DVD - ",title," - ",category," - ",director," - ",Integer.toString(length),
+								" : ",Float.toString(cost),"$" );
+	}
 }
