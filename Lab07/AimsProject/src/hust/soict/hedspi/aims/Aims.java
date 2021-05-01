@@ -35,6 +35,7 @@ public class Aims {
 			return;
 		}
 		Orders.get(orderId).print();
+		displayListOfProduct();
 		System.out.println("Please enter item id: ");
 		int itemId = Integer.parseInt(keyboard.nextLine());
 		for ( int i = 0; i < listOfProducts.size(); i++)
@@ -117,7 +118,7 @@ public class Aims {
 	
 	public static void showUserMenu() {
 		Scanner keyboard = new Scanner(System.in);
-		int n, check = 0;
+		int n;
 		do {
 		System.out.println("\nOrder Management Application: ");
 		System.out.println("--------------------------------");
@@ -135,28 +136,15 @@ public class Aims {
 			System.out.println("Exit User Menu");
 			break;
 		case 1:
-			if (check == 0 ) check = 1;
 			createOrder();			
 			break;
 		case 2:
-			if (check == 0) {
-				System.out.println("Create an order first!");
-				break;
-			}
 			addItem();
 			break;
 		case 3:
-			if (check == 0) {
-				System.out.println("Create an order first!");
-				break;
-			}
 			deleteOrderItem();
 			break;
 		case 4:
-			if (check == 0) {
-				System.out.println("Create an order first!");
-				break;
-			}
 			displayOrder();
 			break;
 		default:

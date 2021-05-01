@@ -61,7 +61,7 @@ public class Order {
 		if (id < 0 || id >= getItemsOrdered().size())
 			System.out.println("Invalid item id! Can not remove!");
 		else {
-			System.out.println("The item \"" + getItemsOrdered().get(id).getTitle() + "\" with id " + id + " has been removed.");
+			System.out.println("The item \"" + getItemsOrdered().get(id).getTitle() + "\" has been removed.");
 			getItemsOrdered().remove(id);
 		}
 	}
@@ -81,11 +81,12 @@ public class Order {
 		//System.out.println("Date: " + dateOrdered.toStringDMYYYY());
 		System.out.println("Ordered Items:");
 		for (int i = 0; i < getItemsOrdered().size(); i++)
-			System.out.println(i + "." + getItemsOrdered().get(i).displayInfo());
+			System.out.println(getItemsOrdered().get(i).displayInfo());
 		System.out.println("***********************************************************************");
         System.out.println("Total cost: " + totalCost() + "$");
         if (getItemsOrdered().size()>=2)
 			System.out.println("Lucky item for free: " + getItemsOrdered().get(luckyItem).getTitle());
+        System.out.println("***********************************************************************");
 	}
 	public void randomLuckyItem() {
         int range = getItemsOrdered().size();
